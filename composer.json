@@ -1,0 +1,19 @@
+{
+    "name": "pmvc-plugin/fastroute",
+    "description": "PMVC plugin for nikic/fast-route",
+    "type": "library",
+    "homepage": "https://github.com/pmvc-plugin/fastroute",
+    "keywords": ["fastroute", "routing", "router", "pmvc", "plug", "plug-in"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hill",
+            "email": "hill@kimo.com"
+        }
+    ],
+    "require": {
+        "pmvc/pmvc": "*",
+        "nikic/fast-route": "*"
+    },
+    "minimum-stability": "dev"
+}
