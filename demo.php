@@ -1,12 +1,14 @@
 <?php
-include_once('vendor/pmvc/pmvc/include_plug.php');
 include('vendor/autoload.php');
 
-PMVC\plug('fastroute',array(
-    _FILE=>'./fastroute.php'
-))->addRoute('GET','/','aaa');
+# plugin
+include_once('vendor/pmvc/pmvc/include_plug.php');
+PMVC\setPlugInFolder('../');
 
-$dispatch = PMVC\plug('fastroute')->getDispatch('GET','/');
+# add route
+PMVC\plug('fast-route')->addRoute('GET','/','aaa');
 
+# parse route by url
+$dispatch = PMVC\plug('fast-route')->getDispatch('GET','/');
 var_dump($dispatch);
 
