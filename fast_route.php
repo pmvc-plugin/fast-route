@@ -1,10 +1,10 @@
 <?php
-namespace PMVC\PlugIn\FastRoute;
+namespace PMVC\PlugIn\fast_route;
 use FastRoute\Dispatcher;
 
-${_INIT_CONFIG}[_CLASS] = 'PMVC\PlugIn\FastRoute\Routing';
+${_INIT_CONFIG}[_CLASS] = 'PMVC\PlugIn\fast_route\fast_route';
 
-class Routing extends \PMVC\PLUGIN
+class fast_route extends \PMVC\PlugIn
 {
     
     private $dispatcher;

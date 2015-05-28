@@ -1,8 +1,8 @@
 {
-    "name": "pmvc-plugin/fast-route",
-    "description": "PMVC plugin for nikic/fast-route",
+    "name": "pmvc-plugin/fast_route",
+    "description": "PMVC plugin for nikic/fast_route",
     "type": "library",
-    "homepage": "https://github.com/pmvc-plugin/fast-route",
+    "homepage": "https://github.com/pmvc-plugin/fast_route",
     "keywords": ["fast-route", "routing", "router", "pmvc",  "plug-in"],
     "license": "MIT",
     "authors": [
