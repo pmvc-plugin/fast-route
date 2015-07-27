@@ -19,7 +19,13 @@ class fast_route extends \PMVC\PlugIn
         });
     }
 
-    public function addRoute($method, $uri, $action){
+    public function getRoutes()
+    {
+        return $this->routes;
+    }
+
+    public function addRoute($method, $uri, $action)
+    {
         $this->routes[$method.':'.$uri] = array(
             'method'=>$method,
             'uri'=>$uri,
@@ -27,7 +33,8 @@ class fast_route extends \PMVC\PlugIn
         );
     }
 
-    public function getDispatch($method,$uri){
+    public function getDispatch($method,$uri)
+    {
         $this->dispatcher = $this->createDispatcher(); 
         $routeInfo = $this->dispatcher->dispatch($method, $uri);
         switch ($routeInfo[0]) {
