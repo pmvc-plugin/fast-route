@@ -2,7 +2,7 @@
 namespace PMVC\PlugIn\fast_route;
 use FastRoute\Dispatcher;
 
-${_INIT_CONFIG}[_CLASS] = 'PMVC\PlugIn\fast_route\fast_route';
+${_INIT_CONFIG}[_CLASS] = __NAMESPACE__.'\fast_route';
 
 class fast_route extends \PMVC\PlugIn
 {
@@ -26,7 +26,7 @@ class fast_route extends \PMVC\PlugIn
 
     public function addRoute($method, $uri, $action)
     {
-        $this->routes[$method.':'.$uri] = array(
+        $this->routes[] = array(
             'method'=>$method,
             'uri'=>$uri,
             'action'=>$action
@@ -53,4 +53,3 @@ class fast_route extends \PMVC\PlugIn
         }
     }
 }
-?>
