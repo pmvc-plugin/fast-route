@@ -2,7 +2,7 @@
 PMVC\Load::plug();
 
 # plugin
-PMVC\setPlugInFolder('../');
+PMVC\setPlugInFolders(['../']);
 
 
 class FastRouteTest extends PHPUnit_Framework_TestCase
