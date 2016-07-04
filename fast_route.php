@@ -8,7 +8,7 @@ class fast_route extends \PMVC\PlugIn
 {
     
     private $dispatcher;
-    private $routes;
+    private $routes=[];
 
     protected function createDispatcher()
     {
